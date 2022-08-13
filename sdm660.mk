@@ -326,8 +326,6 @@ PRODUCT_PACKAGES += \
     init.qcom.early_boot.sh \
     init.qcom.rc \
     init.qcom.sh \
-    init.qcom.usb.rc \
-    init.qcom.usb.sh \
     init.recovery.qcom.rc \
     init.target.rc \
     init.xiaomi_parts.rc \
@@ -588,6 +586,23 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.usb@1.0-service.xiaomi_sdm660
 
+<<<<<<< HEAD
+=======
+PRODUCT_PACKAGES += \
+    init.qcom.usb.rc \
+    init.qcom.usb.sh
+
+PRODUCT_SOONG_NAMESPACES += \
+    vendor/qcom/opensource/usb/etc
+
+# Vibrator
+PRODUCT_PACKAGES += \
+    vendor.qti.hardware.vibrator.service
+
+PRODUCT_COPY_FILES += \
+    vendor/qcom/opensource/vibrator/excluded-input-devices.xml:$(TARGET_COPY_OUT_VENDOR)/vendor/etc/excluded-input-devices.xml
+
+>>>>>>> ea5d850d (sdm660-common: Use QTI USB init configs from USB HAL repo)
 # VNDK
 PRODUCT_PACKAGES += \
     libdng_sdk.vendor_32 \
