@@ -18,6 +18,9 @@
 # Debug
 /sys/kernel/debug/mmc0/mmc0:0001/ext_csd                                                                                    u:object_r:debugfs_mmc:s0
 
+# Device nodes
+/dev/stune(/.*)?	                                                                                                           u:object_r:cgroup:s0
+
 # Executables
 /vendor/bin/sh                                                                                                              u:object_r:vendor_shell_exec:s0
 
