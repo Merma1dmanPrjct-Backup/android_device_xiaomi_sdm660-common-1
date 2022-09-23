@@ -355,6 +355,7 @@ PRODUCT_PACKAGES += \
     qcom.fmradio.xml
 endif
 
+<<<<<<< HEAD
 # Ion
 PRODUCT_PACKAGES += \
     libion
@@ -363,6 +364,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/configs/msm_irqbalance.conf:$(TARGET_COPY_OUT_VENDOR)/etc/msm_irqbalance.conf
 
+=======
+>>>>>>> fe0aeb37 (sdm660-common: Nuke msm_irqbalance)
 # IRSC
 PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/configs/sec_config:$(TARGET_COPY_OUT_VENDOR)/etc/sec_config

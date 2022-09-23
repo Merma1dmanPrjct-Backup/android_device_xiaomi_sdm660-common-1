@@ -443,6 +443,7 @@ vendor/lib64/libsdmextension.so|913503f002aa2afbeca90d429bac4bff4a2266e0
 vendor/lib/hw/vulkan.sdm660.so|6df3aa5c6badc46bc7a0367b9a62b0ab5b406159
 vendor/lib64/hw/vulkan.sdm660.so|f0cf8bccfcfd0473a2c0322b1274dc4d752f2abb
 
+<<<<<<< HEAD
 # IRQ balance - from LA.UM.8.2.r1-07500-sdm660.0
 vendor/bin/msm_irqbalance|0e967f5c7eaf8d863a50996459101be47adf96a2
 
@@ -450,6 +451,12 @@ vendor/bin/msm_irqbalance|0e967f5c7eaf8d863a50996459101be47adf96a2
 vendor/lib64/libkeymasterdeviceutils.so|ea44915adfee57f1bd813b2184987565d396ab82
 vendor/lib64/libkeymasterprovision.so|25505bda86672a5ae31f75b8f8af0a3560ef648f
 vendor/lib64/libkeymasterutils.so|2791994395cd10eb1092b8bd8fea15987e17421d
+=======
+# Keymaster - from LA.UM.10.2.1.r1-03400-sdm660.0-kunmun
+vendor/lib64/libkeymasterdeviceutils.so|6fd0b0e1b30c4e6c5272794896306596880c657b
+vendor/lib64/libkeymasterprovision.so|d6c95d3543c707df133d50764f647e5f07adb82b
+vendor/lib64/libkeymasterutils.so|a642ac1202ddddbf62917b6450fa3d7eaf622b6a
+>>>>>>> fe0aeb37 (sdm660-common: Nuke msm_irqbalance)
 
 # Listen -  from jasmine V11.0.23.0.QDIMIXM
 vendor/lib/libadpcmdec.so|6e9be864a1380e099a2d68237e13a724f3143314
