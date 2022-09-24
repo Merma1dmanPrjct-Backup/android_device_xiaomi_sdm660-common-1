@@ -7,6 +7,7 @@ persist.audio.fluence.voicecomm         u:object_r:vendor_default_prop:s0
 ro.audio.usb.period_us                  u:object_r:vendor_default_prop:s0
 
 # Camera
+<<<<<<< HEAD
 camera.clientname                       u:object_r:camera_prop:s0
 camera.cpp.dumppreviewpayload           u:object_r:camera_prop:s0
 camera.cpp.dumpvideopayload             u:object_r:camera_prop:s0
@@ -37,6 +38,38 @@ vendor.camera.eis.gyro_name             u:object_r:camera_prop:s0
 vidc.enc.dcvs.extra-buff-count          u:object_r:vendor_default_prop:s0
 vendor.camera.cpuperf.en                u:object_r:vendor_default_prop:s0
 video.disable.ubwc                      u:object_r:vendor_default_prop:s0
+=======
+camera.clientname                           u:object_r:vendor_camera_prop:s0
+camera.cpp.dumpvideopayload                 u:object_r:vendor_camera_prop:s0
+camera.cpp.dumppreviewpayload               u:object_r:vendor_camera_prop:s0
+camera.cpp.dumpreprocesspayload             u:object_r:vendor_camera_prop:s0
+camera.sensor.                              u:object_r:vendor_camera_prop:s0
+cameradaemon.SaveMemAtBoot                  u:object_r:vendor_camera_prop:s0
+cpp.set.clock                               u:object_r:vendor_camera_prop:s0
+disable.cpp.power.collapse                  u:object_r:vendor_camera_prop:s0
+persist.cam.pp.feat.mask                    u:object_r:vendor_camera_prop:s0
+persist.camera.                             u:object_r:vendor_camera_prop:s0
+persist.camera.debug.logfile                u:object_r:vendor_camera_prop:s0
+persist.camera.preview.ubwc                 u:object_r:vendor_camera_prop:s0
+persist.capture.burst.exposures             u:object_r:vendor_camera_prop:s0
+persist.debug.sf.showfps                    u:object_r:vendor_camera_prop:s0
+persist.debug.set.fixedfps                  u:object_r:vendor_camera_prop:s0
+persist.denoise.process.plates              u:object_r:vendor_camera_prop:s0
+persist.enable.max.pending.buf              u:object_r:vendor_camera_prop:s0
+persist.partial.skip                        u:object_r:vendor_camera_prop:s0
+persist.vendor.camera.                      u:object_r:vendor_camera_prop:s0
+persist.vendor.mwqem.enable                 u:object_r:vendor_camera_prop:s0
+ro.camera.req.fmq.size                      u:object_r:vendor_camera_prop:s0
+ro.camera.res.fmq.size                      u:object_r:vendor_camera_prop:s0
+sys.camera                                  u:object_r:hal_camera_prop:s0
+sys.camera.miui.apk                         u:object_r:system_prop:s0
+ubwc.no.compression                         u:object_r:vendor_camera_prop:s0
+vendor.camera.                              u:object_r:vendor_camera_prop:s0
+vendor.camera.eis.gyro_name                 u:object_r:vendor_camera_prop:s0
+vendor.camera.skip_unconfigure.packagelist  u:object_r:vendor_camera_prop:s0
+vidc.enc.dcvs.extra-buff-count              u:object_r:vendor_camera_prop:s0
+video.disable.ubwc                          u:object_r:vendor_camera_prop:s0
+>>>>>>> 717057c7 (sdm660-common: sepolicy: relabel miui prop)
 
 # Dirac
 persist.audio.dirac.                    u:object_r:dirac_prop:s0
