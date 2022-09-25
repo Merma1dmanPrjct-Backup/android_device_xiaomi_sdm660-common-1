@@ -9,6 +9,12 @@ ro.config.vc_call_vol_steps=7
 # Bluetooth
 persist.vendor.bt.a2dp_offload_cap=sbc-aac-aptx-aptxhd
 vendor.bluetooth.soc=cherokee
+<<<<<<< HEAD
+=======
+bt.max.hfpclient.connections=1
+vendor.hw.fm.init=0
+ro.bluetooth.wipower=false
+>>>>>>> a9056764 (sdm660-common: properties: tweak bluetooth props)
 
 # Blur
 ro.surface_flinger.supports_background_blur=0
