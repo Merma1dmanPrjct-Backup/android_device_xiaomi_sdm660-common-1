@@ -208,12 +208,15 @@ PRODUCT_PACKAGES += \
     hwcomposer.sdm660 \
     memtrack.sdm660 \
     libdisplayconfig \
+<<<<<<< HEAD
     libdisplayconfig.qti \
     libdisplayconfig.qti.vendor \
     libqdMetaData \
     libqdMetaData.vendor \
     libstagefright_enc_common \
     libtinyxml \
+=======
+>>>>>>> 2c6f8ea3 (sdm660-common: remove duplicate tinyxml)
     vendor.display.config@1.0 \
     vendor.display.config@1.0.vendor \
     vendor.display.config@2.0 \
