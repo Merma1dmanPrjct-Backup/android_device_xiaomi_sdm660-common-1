@@ -35,11 +35,7 @@ cc_binary {
     vintf_fragments: ["aidl/android.hardware.power-service.xiaomi_sdm660.xml"],
     vendor: true,
     shared_libs: [
-<<<<<<< HEAD
-        "android.hardware.power-V1-ndk_platform",
-=======
         "android.hardware.power-V2-ndk",
->>>>>>> 993729bb (sdm660-common: Remove ndk_platform backend. Use the ndk backend.)
         "libbase",
         "libcutils",
         "liblog",
@@ -47,16 +43,14 @@ cc_binary {
         "libbinder_ndk",
         "libdisppower",
         "libperfmgr",
-<<<<<<< HEAD
-        "pixel-power-ext-V1-ndk_platform",
-=======
         "libprocessgroup",
         "pixel-power-ext-V1-ndk",
->>>>>>> 993729bb (sdm660-common: Remove ndk_platform backend. Use the ndk backend.)
     ],
     srcs: [
         "aidl/service.cpp",
         "aidl/Power.cpp",
         "aidl/PowerExt.cpp",
+        "aidl/PowerHintSession.cpp",
+        "aidl/PowerSessionManager.cpp",
     ],
 }
