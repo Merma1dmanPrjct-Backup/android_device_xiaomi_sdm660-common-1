@@ -162,28 +162,6 @@ PRODUCT_PACKAGES += \
     com.android.media.swcodec \
     libsfplugin_ccodec
 
-<<<<<<< HEAD
-# Cgroup and task_profiles
-PRODUCT_COPY_FILES += \
-    $(COMMON_PATH)/configs/task_profiles.json:$(TARGET_COPY_OUT_VENDOR)/etc/task_profiles.json \
-    $(COMMON_PATH)/configs/cgroups.json:$(TARGET_COPY_OUT_VENDOR)/etc/cgroups.json
-
-# Component overrides
-PRODUCT_COPY_FILES += \
-    $(COMMON_PATH)/configs/component-overrides.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sysconfig/component-overrides.xml
-
-# Connectivity Engine support (CNE)
-PRODUCT_PACKAGES += \
-    cneapiclient \
-    com.quicinc.cne \
-    services-ext
-
-# Configstore
-PRODUCT_PACKAGES += \
-    android.hardware.configstore@1.1-service
-
-=======
->>>>>>> 7483dcc2 (sdm660-common: Drop component overrides)
 # Dalvik
 $(call inherit-product, frameworks/native/build/phone-xhdpi-4096-dalvik-heap.mk )
 
@@ -204,30 +182,20 @@ PRODUCT_PACKAGES += \
     android.hardware.graphics.allocator@3.0-impl \
     android.hardware.graphics.allocator@4.0-impl \
     android.hardware.graphics.composer@2.1-service \
-<<<<<<< HEAD
-    android.hardware.graphics.mapper@2.0-impl-2.1 \
-    android.hardware.memtrack@1.0-impl \
-    android.hardware.memtrack@1.0-service \
-=======
     android.hardware.graphics.mapper@3.0-impl-qti-display \
     android.hardware.graphics.mapper@4.0-impl-qti-display \
     android.hardware.memtrack-service.example \
     vendor.qti.hardware.display.allocator-service \
     vendor.qti.hardware.display.mapper@2.0.vendor \
->>>>>>> 9f2276b5 (sdm660-common: Replace the HIDL with AIDL for android.hardware.memtrack)
     gralloc.sdm660 \
     hwcomposer.sdm660 \
     memtrack.sdm660 \
     libdisplayconfig \
-<<<<<<< HEAD
     libdisplayconfig.qti \
     libdisplayconfig.qti.vendor \
     libqdMetaData \
     libqdMetaData.vendor \
     libstagefright_enc_common \
-    libtinyxml \
-=======
->>>>>>> 2c6f8ea3 (sdm660-common: remove duplicate tinyxml)
     vendor.display.config@1.0 \
     vendor.display.config@1.0.vendor \
     vendor.display.config@2.0 \
@@ -355,17 +323,6 @@ PRODUCT_PACKAGES += \
     qcom.fmradio.xml
 endif
 
-<<<<<<< HEAD
-# Ion
-PRODUCT_PACKAGES += \
-    libion
-
-# IRQ
-PRODUCT_COPY_FILES += \
-    $(COMMON_PATH)/configs/msm_irqbalance.conf:$(TARGET_COPY_OUT_VENDOR)/etc/msm_irqbalance.conf
-
-=======
->>>>>>> fe0aeb37 (sdm660-common: Nuke msm_irqbalance)
 # IRSC
 PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/configs/sec_config:$(TARGET_COPY_OUT_VENDOR)/etc/sec_config
@@ -603,8 +560,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.usb@1.0-service.xiaomi_sdm660
 
-<<<<<<< HEAD
-=======
 PRODUCT_PACKAGES += \
     init.qcom.usb.rc \
     init.qcom.usb.sh
@@ -619,7 +574,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     vendor/qcom/opensource/vibrator/excluded-input-devices.xml:$(TARGET_COPY_OUT_VENDOR)/vendor/etc/excluded-input-devices.xml
 
->>>>>>> ea5d850d (sdm660-common: Use QTI USB init configs from USB HAL repo)
 # VNDK
 PRODUCT_PACKAGES += \
     libdng_sdk.vendor_32 \
